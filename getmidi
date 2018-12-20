@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+
+if [ ! -d midi ]; then
+    mkdir midi
+fi
+
+while IFS="," read FNAME URL
+do
+    echo "Downloading "$URL
+    wget $URL
+    mv ${URL##*/} midi/$FNAME
+done < midi-sources.csv

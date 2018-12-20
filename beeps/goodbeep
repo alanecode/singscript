@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+mid2beep -m=../midi/pokemon-level-up.mid 1> /dev/null
