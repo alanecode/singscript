@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
+current_dir=$(dirname $(readlink -f $0))
+cd $current_dir 
 mid2beep -m=../midi/tetris-game-over.mid 1> /dev/null
